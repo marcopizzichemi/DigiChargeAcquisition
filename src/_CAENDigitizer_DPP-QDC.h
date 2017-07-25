@@ -20,6 +20,7 @@
 #define _CAENDIGITIZER_DPP_QDC_H
 
 #include <CAENDigitizer.h>
+#include <string.h>    //mod for using memset under linux
 
 #define MAX_CHANNELS 64
 #define MAX_GROUPS    8

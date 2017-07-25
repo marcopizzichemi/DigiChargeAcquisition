@@ -9,10 +9,14 @@
 #include <CAENDigitizer.h>
 #include "_CAENDigitizer_DPP-QDC.h"
 #include <stdio.h>
+#undef max  // mod to use max under linux
 
 extern unsigned int gEquippedGroups;
 extern _CAEN_DGTZ_DPP_QDC_Event_t *gEventsGrp[8];
 
+uint32_t max(uint32_t a, uint32_t b) {
+  return ((a) > (b) ? (a) : (b));
+}
 
 uint32_t _COMMON_GetChannelAddress(uint32_t base, uint16_t channel) {
     //return base + (0x100 * channel);

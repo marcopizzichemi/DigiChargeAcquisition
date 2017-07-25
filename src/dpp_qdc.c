@@ -852,13 +852,13 @@ int setup_acquisition() {
       }
 
 	  /* open gnuplot in a pipe and the data file*/
-      gHistPlotFile = popen("pgnuplot.exe", "w");
+      gHistPlotFile = popen("gnuplot", "w");  //mod for gnuplot under linux
       if (gHistPlotFile==NULL) {
           printf("Can't open gnuplot\n");
           return -1; 
       }
       if (gParams.AcqMode == ACQMODE_MIXED) {
-          gWavePlotFile = popen("pgnuplot.exe", "w");
+          gWavePlotFile = popen("gnuplot", "w");  //mod for gnuplot under linux
           fprintf(gWavePlotFile, "set yrange [0:4096]\n");
       }
 

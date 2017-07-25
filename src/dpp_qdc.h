@@ -13,7 +13,8 @@
 #include <stdio.h>
 #include <time.h>
 #include <sys/timeb.h>
-#include <process.h>
+// #include <process.h>  //mod, doesn't exists in linux
+#include <limits.h>      //mod to use under linux
 #include <errno.h>
 
 #include "CAENDigitizer.h"
