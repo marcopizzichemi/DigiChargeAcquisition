@@ -21,8 +21,9 @@
 #include "_CAENDigitizer_DPP-QDC.h"
 
 /* Macro definition */ 
-#define popen  _popen    /* redefine POSIX 'deprecated' popen as _popen */
-#define pclose _pclose   /* redefine POSIX 'deprecated' pclose as _pclose */
+// #define popen  _popen    /* redefine POSIX 'deprecated' popen as _popen */     // mod to work on linux
+// #define pclose _pclose   /* redefine POSIX 'deprecated' pclose as _pclose */  //mod to work on linux
+
 
 #define CAEN_USE_DIGITIZERS
 #define IGNORE_DPP_DEPRECATED

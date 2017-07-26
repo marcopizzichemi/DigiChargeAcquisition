@@ -57,7 +57,8 @@ int main(int argc, char* argv[])
     gPrevHPlotTime = gCurrTime;
     gPrevWPlotTime = gCurrTime;
 
-
+//     ret = CAEN_DGTZ_Reset(0);
+//     printf("Reset Result = %d \n",ret);
     /* Readout Loop */
 	while(running) {
 
