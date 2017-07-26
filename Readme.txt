@@ -1,3 +1,21 @@
+MODIFIED VERSION OF DPP-QDC-Demo
+
+(N.B. this version works in LIST but not in MIXED) 
+
+Compile in a folder bin/ with
+
+gcc -DLINUX ../src/readout_demo.c ../src/dpp_qdc.c ../src/_CAENDigitizer_DPP-QDC.c -o readout_demo -lCAENDigitizer -lCAENComm -fpermissive -w
+
+Run with
+
+./readout_demo N
+
+Where N is the acquisition duration in sec.
+Example of config file is in file Sample_config.txt, which MUST be in bin folder and MUST be renamed config.txt (for now, like that).
+
+
+
+
 -----------------------------------------------------------------------------
 
                    --- CAEN SpA - Computing Division ---
